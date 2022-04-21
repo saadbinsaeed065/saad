@@ -21,9 +21,9 @@ const Banner = () => {
    
     <Grid  container className="banner container">
     
-
+    <div className="mainservice">  
          <Grid item xs={12} sm={6}>
-                    <div className="header__content">
+                   
                       <div className="header__section">
                   
                         <ul className="header__ul">
@@ -57,9 +57,10 @@ const Banner = () => {
                           
                           </li>
                         </ul>
-                        <h1>{state.title} <span className="high_name">Saad</span></h1>
-                        <p>{state.text}</p>
-                      
+                        <div className="banner__info">
+                              <h1>{state.title} <span className="high_name">Saad</span></h1>
+                              <p>{state.text}</p>
+                        </div>
                         <div className="btn">
                         <Link to="/contact"  >
                             <button ><span>Contact Me</span> </button>
@@ -73,7 +74,7 @@ const Banner = () => {
                 
                       
                       </div>
-                    </div>
+                   
           </Grid>
          
           <Grid item xs={12} md={6}>
@@ -89,7 +90,7 @@ const Banner = () => {
               </div>
       </Grid>
          
-      
+  </div>    
  </Grid>
     
 

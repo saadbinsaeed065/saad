@@ -6,7 +6,7 @@ const Prices = () => {
     mainHeader: "CHOOSE A PLAN",
     subHeading: "Pricing Plan",
     text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+      "Choose plan which is suitable to your project and we'll serve accordingly!",
   });
   const [state] = React.useState([
     {
@@ -42,7 +42,7 @@ const Prices = () => {
   ]);
   return (
 <>
-    <Grid  container className="services container">
+    <Grid  container className="prices container">
     
 
     <Grid item xs={12}>

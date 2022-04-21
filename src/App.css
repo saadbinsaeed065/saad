@@ -11,11 +11,7 @@ body {
   display: flex;
   align-items: center;
 }
-.banner {
-  background: url("/images/lap.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .digital{
   display: flex;
   align-items: center;
@@ -81,14 +77,16 @@ transition: all 0.5s linear;
 
 
 /* header */
-.header__content {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+.banner {
   width: 100%;
-  color: #fff;
-  margin: 30px;
+  /* height: 100%; */
+  background: url("/images/lap.jpg");
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
+
 .header__ul {
   list-style-type: none;
   display: flex;
@@ -124,19 +122,27 @@ transition: all 0.5s linear;
 .header__ul li:first-child {
   margin-left: 0;
 }
-.header__section h1 {
+.banner__info  h1 {
   font-size: 57px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.header__section p {
+.banner__info  p {
   font-size: 26px;
   font-weight: 300;
   line-height: 40px;
   margin-bottom: 50px;
+  padding: 10px;
 }
 .high_name{
   color: orangered;
+}
+.banner__info {
+  color: rgb(238, 231, 231);
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.5s linear;
 }
 
 .banner__img .banimg{
@@ -203,11 +209,13 @@ button {
 
 /* Servives */
 .services {
+  width: 100%;
   background: url('/images/ser.jpg');
   padding: 100px 0;
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .common {
@@ -226,6 +234,7 @@ button {
   color: #b0ce08;
   background-color: rgba(14, 2, 27, 0.733);
   border-radius: 30px;
+  padding: 5px;
 }
 .commonBorder {
   background: #ff4a57;
@@ -236,7 +245,7 @@ button {
 
 .services__box {
   width: 40%;
-  padding: 40px;
+  padding: 30px;
  text-align: center;
   background: #23263a;
   color: #fff;
@@ -283,6 +292,7 @@ button {
   border-radius: 30px;
   padding: 10px;
   transition: all 0.5s linear;
+  margin: 10px;
 }
 .about__info:hover{
   background-color: rgb(46, 142, 180);
@@ -312,10 +322,14 @@ button {
   margin: 10px 0;
 }
 /* Prices */
-.prices {
+.prices{
   width: 100%;
+  background: url('/images/ser.jpg');
   padding: 100px 0;
-  background: #1f2235;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 .price {
   background: #23263a;
@@ -458,13 +472,19 @@ font-size: 40px;
   .toggle {
     display: flex;
   }
-  .header__section h1 {
+  .header__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+.banner__info h1 {
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 20px;
     align-items: center;
   }
-  .header__section p {
+ .banner__info p {
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
@@ -495,9 +515,14 @@ font-size: 40px;
     flex-direction: column;
     align-items: center;
   }
-  .header__content{
-    display: flex;
-    align-items: center;
-    justify-items: center;
+  .services__box {
+    width: 70%;
+  }
+
+  .banner{
+    height: 100%;
+  }
+  .services {
+    height: 100%;
   }
 }
